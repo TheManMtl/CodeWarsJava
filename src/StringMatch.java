@@ -3,7 +3,7 @@
  * student ID: 2340457
  * */
 
-public class StringFind {
+public class StringMatch {
     public static boolean solution1(String str, String ending) {
         if (ending.length()>str.length()) return false;
         StringBuilder strEnding = new StringBuilder();
@@ -12,6 +12,10 @@ public class StringFind {
         }
         strEnding.reverse();
         return strEnding.toString().equals(ending);
+    }
+
+    public static boolean solution2(String str, String ending) {
+       return str.endsWith(ending);
     }
 
 }
