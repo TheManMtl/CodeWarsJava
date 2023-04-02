@@ -18,4 +18,9 @@ public class StringMatch {
        return str.endsWith(ending);
     }
 
+    public static boolean solution3(String str, String ending) {
+        return str.length() >= ending.length() ?
+                str.substring(str.length()-ending.length()).equals(ending) : false;
+    }
+
 }
